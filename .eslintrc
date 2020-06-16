@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "prettier",
+    "simple-import-sort"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "indent": "warn",
+    "arrow-parens": [
+      0,
+      "as-needed"
+    ],
+    "@typescript-eslint/indent": [
+      "warn",
+      2
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": 0,
+    "prettier/prettier": "error",
+    "import/prefer-default-export": 0,
+    "import/no-cycle": 1,
+    "import/extensions": "off",
+    "no-underscore-dangle": 0,
+    "no-console": "error",
+    "max-classes-per-file": "off",
+    "max-len": [
+      "off"
+    ],
+    "simple-import-sort/sort": "error",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": [
+      "error"
+    ],
+    "class-methods-use-this": 0
+  },
+  "env": {
+    "jest": true
+  }
+}
